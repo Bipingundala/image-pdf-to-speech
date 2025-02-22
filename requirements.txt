@@ -1,0 +1,6 @@
+streamlit
+pytesseract
+pillow
+pdfplumber
+gtts
+shutil
