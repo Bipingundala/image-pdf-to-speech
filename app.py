@@ -45,12 +45,12 @@ with st.sidebar:
     
     st.caption("Developed with ❤️ using **Streamlit**")
     st.sidebar.write("### About the Developer")
-st.sidebar.write("**Bipin Gundala**")
-st.sidebar.write("I am a software developer with a passion for building machine learning applications.")
-st.sidebar.write("This project is aimed at helping farmers identify plant diseases using deep learning.")
-st.sidebar.write("**Contact Information:**")
-st.sidebar.write("- **Email:** bipin.gundala@gmail.com")
-st.sidebar.write("- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/bipin-gundala-b54496210/)")
+    st.sidebar.write("**Bipin Gundala**")
+    st.sidebar.write("I am a software developer with a passion for building machine learning applications.")
+    st.sidebar.write("This project is aimed at helping farmers identify plant diseases using deep learning.")
+    st.sidebar.write("**Contact Information:**")
+    st.sidebar.write("- **Email:** bipin.gundala@gmail.com")
+    st.sidebar.write("- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/bipin-gundala-b54496210/)")
 
 # Title with Animation
 st.markdown("<h1 style='text-align: center;'>📄 PDF/Image to Speech Converter</h1>", unsafe_allow_html=True)
