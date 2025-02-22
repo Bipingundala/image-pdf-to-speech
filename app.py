@@ -18,14 +18,6 @@ install_tesseract()
 
 
 
-# ✅ Set Tesseract OCR Path (Streamlit Cloud Auto-Detects)
-TESSERACT_CMD = shutil.which("tesseract")
-if TESSERACT_CMD:
-    pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
-
-# ✅ Ensure Custom Trained Models Are Used
-TESSDATA_DIR = os.path.join(os.getcwd(), "tessdata")
-os.environ["TESSDATA_PREFIX"] = TESSDATA_DIR
 
 
 
