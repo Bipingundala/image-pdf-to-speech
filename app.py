@@ -6,7 +6,7 @@ import os
 from gtts import gTTS
 import tempfile
 import time
-import shutil
+
 
 # ✅ Install Tesseract in Streamlit Cloud
 def install_tesseract():
