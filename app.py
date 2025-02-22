@@ -13,8 +13,11 @@ def install_tesseract():
     if not shutil.which("tesseract"):
         os.system("apt-get update && apt-get install -y tesseract-ocr")
         os.system("apt-get install -y tesseract-ocr-eng tesseract-ocr-hin tesseract-ocr-te")
+try:
+    install_tesseract()
+except Exception as e:
+    st.error(f"❌ Tesseract installation failed: {e}")
 
-install_tesseract()
 
 # ✅ Set Tesseract OCR Path (Streamlit Cloud Auto-Detects)
 TESSERACT_CMD = shutil.which("tesseract")
