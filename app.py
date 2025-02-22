@@ -1,4 +1,6 @@
 import streamlit as st
+# Page Configuration
+st.set_page_config(page_title="PDF/Image to Speech", page_icon="📖", layout="wide")
 import pytesseract
 from PIL import Image
 import pdfplumber
@@ -20,9 +22,6 @@ install_tesseract()
 
 
 
-
-# Page Configuration
-st.set_page_config(page_title="PDF/Image to Speech", page_icon="📖", layout="wide")
 
 # Sidebar Title
 with st.sidebar:
