@@ -112,21 +112,21 @@ if uploaded_file is not None:
 
  
     if extracted_text:
-    st.subheader("📜 Extracted Text:")
-    st.text_area("📝 Text", extracted_text, height=200)  # ✅ Fixed syntax error
+        st.subheader("📜 Extracted Text:")
+        st.text_area("📝 Text", extracted_text, height=200)  # ✅ Fixed syntax error
 
     # Language selection
-    lang_choice = st.selectbox("🌍 Choose Language for Speech:", ["Telugu (te)", "Hindi (hi)", "English (en)"])
-    lang_code = {"Telugu (te)": "te", "Hindi (hi)": "hi", "English (en)": "en"}[lang_choice]
+        lang_choice = st.selectbox("🌍 Choose Language for Speech:", ["Telugu (te)", "Hindi (hi)", "English (en)"])
+        lang_code = {"Telugu (te)": "te", "Hindi (hi)": "hi", "English (en)": "en"}[lang_choice]
 
     # Read aloud button
-    if st.button("🔊 Read Aloud", use_container_width=True):
-        with st.spinner("🔉 Generating speech..."):
-            time.sleep(2)
-            audio_path = speak_text(extracted_text, lang=lang_code)
-            if audio_path:
-                st.success("✅ Speech generated successfully!")
-                st.audio(audio_path, format="audio/mp3")
-                st.download_button("⬇ Download Audio", data=open(audio_path, "rb"), file_name="speech.mp3", mime="audio/mp3")
+        if st.button("🔊 Read Aloud", use_container_width=True):
+            with st.spinner("🔉 Generating speech..."):
+                time.sleep(2)
+                audio_path = speak_text(extracted_text, lang=lang_code)
+                if audio_path:
+                    st.success("✅ Speech generated successfully!")
+                    st.audio(audio_path, format="audio/mp3")
+                    st.download_button("⬇ Download Audio", data=open(audio_path, "rb"), file_name="speech.mp3", mime="audio/mp3")
 
 
